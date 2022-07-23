@@ -1,0 +1,10 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+ name: traefik
+ namespace: argocd
+spec:
+  destinations:
+    - name: docker-desktop
+      namespace: argocd
+      server: https://kubernetes.docker.internal:6443
