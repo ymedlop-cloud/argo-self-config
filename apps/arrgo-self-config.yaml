@@ -1,0 +1,22 @@
+kind: Application
+metadata:
+  name: argo-self-config
+  namespace: argocd
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.docker.internal:6443
+  project: argocd
+  source:
+    directory:
+      jsonnet: {}
+      recurse: true
+    path: .
+    repoURL: https://github.com/ymedlop-cloud/argo-self-config.git
+    targetRevision: docker-desktop
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
