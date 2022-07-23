@@ -6,7 +6,7 @@ metadata:
 spec:
   destinations:
     - name: docker-desktop
-      namespace: argocd
+      namespace: traefik
       server: https://kubernetes.docker.internal:6443
   sourceRepos:
     - https://github.com/ymedlop-cloud/k8s-definitions.git
