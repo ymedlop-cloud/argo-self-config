@@ -9,5 +9,4 @@ spec:
       namespace: argocd
       server: https://kubernetes.docker.internal:6443
   sourceRepos:
-    - https://github.com/ymedlop-cloud/argo-self-config.git
     - https://github.com/ymedlop-cloud/k8s-definitions.git

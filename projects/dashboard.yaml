@@ -1,10 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
- name: default
+ name: dashboard
  namespace: argocd
 spec:
   destinations:
     - name: docker-desktop
-      namespace: argocd
+      namespace: dashboard
       server: https://kubernetes.docker.internal:6443
+  sourceRepos:
+    - https://github.com/ymedlop-cloud/k8s-definitions.git
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
