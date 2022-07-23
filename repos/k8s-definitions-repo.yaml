@@ -9,7 +9,6 @@ metadata:
   namespace: argocd
 type: Opaque
 data:
-  password: Z2hwX0MzZTl2Y2RuaGNnaG1MQmxaWm5RYmFsbDR5Smw1NDJZT2F0dw==
   project: azhzLWRlZmluaXRpb25z
   type: Z2l0
   url: aHR0cHM6Ly9naXRodWIuY29tL3ltZWRsb3AtY2xvdWQvazhzLWRlZmluaXRpb25zLmdpdA==
