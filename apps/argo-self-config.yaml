@@ -1,7 +1,7 @@
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-self-config
-  namespace: argocd
 spec:
   destination:
     namespace: argocd
@@ -11,7 +11,7 @@ spec:
     directory:
       jsonnet: {}
       recurse: true
-    path: .
+    path: ./
     repoURL: https://github.com/ymedlop-cloud/argo-self-config.git
     targetRevision: docker-desktop
   syncPolicy:
