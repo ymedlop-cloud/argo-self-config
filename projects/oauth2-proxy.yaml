@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+ name: oauth2-proxy
+ namespace: argocd
+spec:
+  destinations:
+    - name: docker-desktop
+      namespace: oauth2-proxy
+      server: https://kubernetes.docker.internal:6443
+  sourceRepos:
+    - https://github.com/ymedlop-cloud/k8s-definitions.git
+    - https://charts.bitnami.com/bitnami
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
