@@ -6,7 +6,7 @@ metadata:
     argocd.argoproj.io/secret-type: repository
 stringData:
   insecure: "true"
-  name: kubernetes-dashboard-helm-repo
+  name: my-kubernetes-dashboard-helm-repo
   type: helm
   url: https://kubernetes.github.io/dashboard/
 type: Opaque
