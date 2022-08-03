@@ -10,6 +10,7 @@ spec:
       server: https://kubernetes.default.svc
   sourceRepos:
     - https://github.com/ymedlop/playing-with-argo-k8s-definitions.git
+    - https://helm.traefik.io/traefik
   clusterResourceWhitelist:
   - group: '*'
     kind: '*'
