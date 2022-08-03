@@ -7,7 +7,7 @@ spec:
   destinations:
     - name: docker-desktop
       namespace: traefik
-      server: https://kubernetes.default.svc
+      server: https://kubernetes.docker.internal:6443
   sourceRepos:
     - https://github.com/ymedlop/playing-with-argo-k8s-definitions.git
     - https://helm.traefik.io/traefik
