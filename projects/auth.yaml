@@ -9,7 +9,7 @@ spec:
       namespace: auth
       server: https://kubernetes.docker.internal:6443
   sourceRepos:
-    - https://github.com/ymedlop-cloud/k8s-definitions.git
+    - https://github.com/ymedlop/playing-with-argo-k8s-definitions.git
   clusterResourceWhitelist:
   - group: '*'
     kind: '*'
