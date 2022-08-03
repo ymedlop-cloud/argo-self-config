@@ -8,7 +8,7 @@ metadata:
   name: k8s-definitions-repo
   namespace: argocd
 type: Opaque
-data:
-  project: azhzLWRlZmluaXRpb25z
-  type: Z2l0
-  url: aHR0cHM6Ly9naXRodWIuY29tL3ltZWRsb3AtY2xvdWQvazhzLWRlZmluaXRpb25zLmdpdA==
+stringData:
+  project: k8s-definitions
+  type: git
+  url: https://github.com/ymedlop/playing-with-argo-k8s-definitions.git
