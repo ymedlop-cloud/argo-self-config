@@ -5,7 +5,7 @@ metadata:
   labels:
     argocd.argoproj.io/secret-type: repository
 stringData:
-  insecure: true
+  insecure: "true"
   name: traefik-helm-repo
   type: helm
   url: https://helm.traefik.io/traefik
