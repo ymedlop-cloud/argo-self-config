@@ -8,5 +8,5 @@ stringData:
   insecure: "true"
   name: kubernetes-dashboard-helm-repo
   type: helm
-  url: https://kubernetes.github.io/dashboard
+  url: https://kubernetes.github.io/dashboard/
 type: Opaque
