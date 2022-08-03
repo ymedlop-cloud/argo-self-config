@@ -8,7 +8,7 @@ metadata:
   name: argo-self-config-repo
   namespace: argocd
 type: Opaque
-data:
-  project: YXJnby1zZWxmLWNvbmZpZw==
-  type: Z2l0
-  url: aHR0cHM6Ly9naXRodWIuY29tL3ltZWRsb3AtY2xvdWQvYXJnby1zZWxmLWNvbmZpZy5naXQ=
+stringData:
+  project: argo-self-config
+  type: git
+  url: https://github.com/ymedlop/playing-with-argo-self-config.git
