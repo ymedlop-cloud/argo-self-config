@@ -12,7 +12,7 @@ spec:
       jsonnet: {}
       recurse: true
     path: ./
-    repoURL: https://github.com/ymedlop-cloud/argo-self-config.git
+    repoURL: https://github.com/ymedlop/playing-with-argoo-self-config.git
     targetRevision: docker-desktop
   syncPolicy:
     automated:
