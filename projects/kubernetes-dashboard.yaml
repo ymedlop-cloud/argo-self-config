@@ -9,7 +9,7 @@ spec:
       namespace: kubernetes-dashboard
       server: https://kubernetes.docker.internal:6443
   sourceRepos:
-    - https://github.com/ymedlop/playing-with-argo/k8s-definitions.git
+    - https://github.com/ymedlop/playing-with-argo-k8s-definitions.git
     - https://kubernetes.github.io/dashboard
   clusterResourceWhitelist:
   - group: '*'
