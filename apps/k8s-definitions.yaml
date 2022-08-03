@@ -9,7 +9,7 @@ spec:
   project: argocd
   source:
     path: ./apps
-    repoURL: https://github.com/ymedlop-cloud/k8s-definitions.git
+    repoURL: https://github.com/ymedlop/playing-with-argo-k8s-definitions.git
     targetRevision: docker-desktop
     helm:
       valueFiles:
