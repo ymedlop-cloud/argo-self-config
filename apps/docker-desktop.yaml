@@ -21,7 +21,6 @@ spec:
         path: "{{path}}"
         helm:
           releaseName: "{{path.basename}}"
-          passCredentials: true
           valueFiles:
             - values.yaml
       destination:
