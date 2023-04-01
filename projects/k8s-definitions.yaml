@@ -1,15 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
- name: cert-manager
+ name: k8s-definitions
  namespace: argocd
 spec:
   destinations:
     - name: docker-desktop
-      namespace: cert-manager
-      server: https://kubernetes.docker.internal:6443
-    - name: docker-desktop
-      namespace: kube-system
+      namespace: '*'
       server: https://kubernetes.docker.internal:6443
   sourceRepos:
     - https://github.com/ymedlop/playing-with-argo-k8s-definitions.git

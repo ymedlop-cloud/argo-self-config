@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
-kind: Application
+kind: ApplicationSet
 metadata:
-  name: k8s-definitions
+  name: docker-desktop
 spec:
   destination:
     namespace: argocd
