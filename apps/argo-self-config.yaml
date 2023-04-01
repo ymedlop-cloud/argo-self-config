@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     namespace: argocd
-    server: https://kubernetes.docker.internal:6443
+    name: in-cluster
   project: argocd
   source:
     directory:

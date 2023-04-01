@@ -5,9 +5,8 @@ metadata:
   namespace: argocd
 spec:
   destinations:
-    - name: docker-desktop
+    - name: in-cluster
       namespace: "*"
-      server: https://kubernetes.docker.internal:6443
   sourceRepos:
     - https://github.com/ymedlop/playing-with-argo-k8s-definitions.git
   clusterResourceWhitelist:
