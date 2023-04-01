@@ -9,7 +9,7 @@ spec:
         repoURL: https://github.com/ymedlop/playing-with-argo-k8s-definitions.git
         revision: docker-desktop
         directories:
-          - path: ./
+          - path: ./*
   template:
     metadata:
       name: "docker-desktop-{{path.basename}"
