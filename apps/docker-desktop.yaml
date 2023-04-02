@@ -12,7 +12,7 @@ spec:
         - path: "docker-desktop/*"
   template:
     metadata:
-      name: "docker-desktop-{{path.basename}}"
+      name: "{{path.basename}}"
     spec:
       project: k8s-definitions
       source:
