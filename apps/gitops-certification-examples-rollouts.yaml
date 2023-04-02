@@ -26,7 +26,7 @@ spec:
           recurse: true
       destination:
         name: in-cluster
-        namespace: gitops-certification-examples-rollouts
+        namespace: 'gitops-certification-examples-rollouts-{{path.basename}}'
       syncPolicy:
         automated:
           prune: true

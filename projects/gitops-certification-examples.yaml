@@ -6,7 +6,7 @@ metadata:
 spec:
   destinations:
     - name: in-cluster
-      namespace: gitops-certification-examples-rollouts
+      namespace: "*"
   sourceRepos:
     - https://github.com/codefresh-contrib/gitops-certification-examples.git
   clusterResourceWhitelist:
