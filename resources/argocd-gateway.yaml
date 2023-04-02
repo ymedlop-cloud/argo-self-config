@@ -7,7 +7,7 @@ spec:
     istio: ingressgateway
   servers:
     - hosts:
-        - argo.example.com
+        - argo.docker-desktop.com
       port:
         name: https
         number: 443
@@ -17,7 +17,7 @@ spec:
         # argo-cert is a tls secret in istio-system namespace, containing a valid TLS cert for the domain name argo.example.com
         credentialName: argo-cert
     - hosts:
-        - argo.example.com
+        - argo.docker-desktop.com
       port:
         name: http
         number: 80
