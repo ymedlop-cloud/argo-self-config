@@ -9,3 +9,6 @@ spec:
       namespace: gitops-certification-examples-rollouts
   sourceRepos:
     - https://github.com/codefresh-contrib/gitops-certification-examples.git
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
