@@ -17,7 +17,7 @@ spec:
       project: gitops-certification-examples
       source:
         repoURL: https://github.com/codefresh-contrib/gitops-certification-examples.git
-        revision: main
+        targetRevision: main
         path: "{{path}}"
         directory:
           jsonnet: {}
