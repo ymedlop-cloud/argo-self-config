@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: gitops-certification-examples
+  namespace: argocd
+spec:
+  destinations:
+    - name: in-cluster
+      namespace: gitops-certification-examples
+  sourceRepos:
+    - https://github.com/codefresh-contrib/gitops-certification-examples.git

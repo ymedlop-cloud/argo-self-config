@@ -1,0 +1,36 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: docker-desktop
+  namespace: gitops-certification-examples-rollouts
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/codefresh-contrib/gitops-certification-examples.git
+        revision: main
+        directories:
+        - path: "blue-green-app/*"
+  template:
+    metadata:
+      name: "{{path.basename}}"
+    spec:
+      project: gitops-certification-examples
+      source:
+        repoURL: https://github.com/codefresh-contrib/gitops-certification-examples.git
+        revision: main
+        path: "{{path}}"
+        directory:
+          jsonnet: {}
+          recurse: false
+      destination:
+        name: in-cluster
+        namespace: gitops-certification-examples
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        managedNamespaceMetadata:
+          labels:
+            istio-injection: "enabled"
+        syncOptions:
+          - CreateNamespace=true
