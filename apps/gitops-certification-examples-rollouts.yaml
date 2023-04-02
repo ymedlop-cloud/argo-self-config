@@ -9,7 +9,7 @@ spec:
         repoURL: https://github.com/codefresh-contrib/gitops-certification-examples.git
         revision: main
         directories:
-        - path: "blue-green-app/*"
+        - path: "blue-green-app"
   template:
     metadata:
       name: "{{path.basename}}"
