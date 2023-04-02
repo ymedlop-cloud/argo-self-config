@@ -6,7 +6,7 @@ spec:
   destination:
     namespace: argocd
     name: in-cluster
-  project: argocd
+  project: default
   source:
     directory:
       jsonnet: {}
