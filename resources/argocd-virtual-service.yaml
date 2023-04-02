@@ -6,7 +6,7 @@ spec:
   gateways:
     - argocd-gateway
   hosts:
-    - argo.example.com
+    - argo.docker-desktop.com
   http:
     - route:
       - destination:
