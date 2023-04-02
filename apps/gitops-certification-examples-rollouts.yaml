@@ -21,7 +21,7 @@ spec:
         path: "{{path}}"
         directory:
           jsonnet: {}
-          recurse: false
+          recurse: true
       destination:
         name: in-cluster
         namespace: gitops-certification-examples-rollouts
