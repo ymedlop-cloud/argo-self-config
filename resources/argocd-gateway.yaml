@@ -7,7 +7,7 @@ spec:
     istio: ingress
   servers:
     - hosts:
-        - argo.docker-desktop.com
+        - "*"
       port:
         name: https
         number: 443
@@ -16,7 +16,7 @@ spec:
         mode: SIMPLE
         credentialName: argo-cert
     - hosts:
-        - argo.docker-desktop.com
+        - "*"
       port:
         name: http
         number: 80
