@@ -10,6 +10,8 @@ spec:
         revision: main
         directories:
         - path: "blue-green-app"
+        - path: "canary-app-timed"
+        - path: "canary-app"
   template:
     metadata:
       name: "{{path.basename}}"
